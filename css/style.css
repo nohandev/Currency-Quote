@@ -44,6 +44,13 @@ h1 {
 .input {
   display: flex;
   position: relative;
+  border-bottom: 1px solid #3b3b3b;
+  padding: 0 4px;
+  align-items: center;
+}
+
+.currency-symbol {
+  font-size: 1.1em;
 }
 
 .from, .to {
@@ -51,10 +58,6 @@ h1 {
   flex-direction: column;
   gap: 1em;
 }
-
-
-
-
 
 label {
   font-size: 1.2em;
@@ -64,7 +67,7 @@ input {
  padding: 10px;
  width: 400px;
  border: none;
- border-bottom: 1px solid #3b3b3b;
+
  font-size: 1.1em;
 }
 
@@ -79,7 +82,6 @@ select {
   padding: 10px;
   height: 100%;
   border: none;
-  border-bottom: 1px solid #3b3b3b;
   font-size: 1.1em;
 }
 
@@ -98,8 +100,6 @@ option {
 }
 
 .trade-btn {
-  position: absolute;
-  bottom: 0;
   border-radius: 50%;
   padding: 15px 20px;
 }
@@ -114,4 +114,50 @@ button {
 button:hover {
   cursor: pointer;
   background-color:rgb(13, 62, 134);
+}
+
+.buttons {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+
+#updateTime {
+  font-size: 1.1em;
+}
+
+.historic {
+  display: none;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid #3b3b3b;
+  row-gap: 1em;
+}
+
+.historic h2 {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.4em;
+  font-weight: 400;
+  border-bottom: 1px solid #4d4d4d;
+}
+
+.historic p {
+  border-bottom: 1px solid #4d4d4d;
+  font-size: 1.1em;
+  padding: 10px;
+  text-align: start;
+}
+
+.historic p:last-child {
+  border: none;
+  
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .container-content {
+    flex-direction: column;
+  }
 }

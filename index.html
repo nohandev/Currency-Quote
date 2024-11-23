@@ -15,23 +15,20 @@
       <div class="from">
         <label>Quantia:</label>
         <div class="input">
-          
-          <input type="text" id="value" class="input-text" placeholder="Valor para converter" maxlength="20"/>
+          <span id="currency-symbol" class="currency-symbol">BRL</span>
+          <input type="text" id="value" class="input-text" placeholder="Valor para converter" maxlength="20" value="1"/>
           <select id="convert-from" class="select">
             <option value="BRL">Real</option>
             <option value="USD">Dólar</option>
             <option value="EUR">Euro</option>
-            <option value="GPB">Libra Estrelina</option>
+            <option value="GBP">Libra Estrelina</option>
             <option value="JPY">Iene Japonês</option>
             <option value="INR">Rúpia Indiana</option>
             <option value="RUB">Rublo Russo</option>
+            <option value="BTC">Bit Coin</option>
           </select>
         </div>
       </div> 
-
-      <button class="trade-btn"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
-
-      
 
       <div class="to">
         <label>Converter para:</label>
@@ -41,17 +38,23 @@
             <option value="BRL">Real</option>
             <option value="USD" selected>Dólar</option>
             <option value="EUR">Euro</option>
-            <option value="GPB">Libra Estrelina</option>
+            <option value="GBP">Libra Estrelina</option>
             <option value="JPY">Iene Japonês</option>
             <option value="INR">Rúpia Indiana</option>
             <option value="RUB">Rublo Russo</option>
+            <option value="BTC">Bit Coin</option>
           </select>
         </div>
       </div>
     </div>
-
-    <button id="convert-btn" class="btn-convert">Converter</button>
-
+    <div class="buttons">
+      <button id="convert-btn" class="btn-convert">Converter</button>
+      <button class="trade-btn"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+    </div>
+    <section class="historic" id="historic-section">
+      <h2>Histórico de convorsões</h2>
+    </section>
+    <div id="updateTime"></div>
   </main>
   <script src="js/script.js"></script>
 </body>
